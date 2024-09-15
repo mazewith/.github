@@ -2,6 +2,8 @@
 
 <a href="https://mazewith.me/" style="text-align:center; display:block;">https://mazewith.me/</a>
 
+![MazeWith](../Resources/favicon.png)
+
 **MazeWith** is a full-stack, real-time multiplayer maze game built with React & TypeScript. Players use their mobile devices as controllers to navigate the maze. The game screen displays the maze and player movements in real-time.
 
 ## 🚀 Project Overview
