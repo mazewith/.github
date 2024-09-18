@@ -22,9 +22,11 @@
 
 - **React** (TypeScript): Main framework for building the website, game screen, and controller components. It manages the game logic, dynamically generates mazes, and determines valid player movements based on the maze structure. Data is updated and re-rendered in real-time.
 
-### Backend <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="24" height="24"/></a>
+### Backend <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="24" height="24"/></a> <a href="https://redis.io/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/redis/redis-icon.svg" alt="redis" width="24" height="24"/></a> <a href="https://aws.amazon.com/lambda/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="aws-lambda" width="24" height="24"/></a>
 
 - **Firebase** (Realtime Database): Stores player positions, game state, and maze configurations.
+- **Redis**: Used to track game room details such as `createdAt`, `roomId`, and `joins` for efficient real-time updates and displaying game stats like most recent and most played rooms.
+- **AWS Lambda**: Handles serverless processing of game room data. When players create or join a room, the game sends the data to an AWS Lambda function, which processes it and stores it in Redis for fast retrieval.
 
 ### DevOps and Infrastructure
 
